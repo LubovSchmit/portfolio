@@ -1,0 +1,33 @@
+.contactsBlock {
+    padding: 50px 0;
+    background-color: indianred;
+}
+
+.contacts {
+    width: 100%;
+    background-color: peru;
+    text-align: center;
+
+}
+
+.form {
+    border: 1px solid;
+    width: 80%;
+    margin-left: 10%;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input {
+    margin: 5px;
+}
+
+.textarea {
+    margin: 5px;
+}
+
+.buttonContacts {
+    background-color: brown;
+}

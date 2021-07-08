@@ -1,0 +1,36 @@
+.footerBlock {
+    border: 1px solid;
+ /*   min-height: 30vh;*/
+    background-color: darkolivegreen;
+    padding: 50px 0;
+
+
+}
+
+.footerContainer {
+    flex-direction: column;
+}
+
+.footer {
+height: 50px;
+    width: 250px;
+    /*background-color: chartreuse;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    background-color: green;
+    margin: 2px;
+
+}
+
+.footerCopyright {
+    text-align: center;
+    font-family: "Arial Black";
+}
+

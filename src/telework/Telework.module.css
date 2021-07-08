@@ -1,0 +1,15 @@
+.teleworkBlock {
+    padding: 50px 0;
+    background-color: tan;
+}
+
+.textAndButtonBlock {
+    width: 100%;
+    background-color: peru;
+    text-align: center;
+}
+
+.button {
+        background-color: brown;
+
+}

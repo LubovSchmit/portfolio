@@ -1,0 +1,17 @@
+.mainBlock {
+    padding: 50px 0;
+    background-color: tan;
+}
+
+.text {
+    margin: 10px;
+    width: 90%;
+    background-color: darkgoldenrod;
+}
+
+.photo {
+    margin: 10px;
+    width: 90%;
+    min-height: 250px;
+    background-color: teal;
+}
