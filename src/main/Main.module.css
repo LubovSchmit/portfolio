@@ -1,17 +1,32 @@
 .mainBlock {
     padding: 50px 0;
     background-color: tan;
+    border: 1px solid;
+}
+
+.main {
+    border: 1px solid;
+    background-color: lightgreen;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .text {
+    border: 1px solid;
     margin: 10px;
-    width: 90%;
+    width: 600px;
+    min-height: 250px;
     background-color: darkgoldenrod;
 }
 
 .photo {
+    border: 1px solid;
     margin: 10px;
-    width: 90%;
+    width: 600px;
     min-height: 250px;
     background-color: teal;
 }

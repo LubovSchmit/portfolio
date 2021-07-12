@@ -6,7 +6,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
- /*   flex-direction: column;*/
+    flex-wrap: wrap;
+  /*  word-wrap: break-word;*/
+    background-color: cornflowerblue;
+
 
 }
 

@@ -1,11 +1,11 @@
 .projectsBlock {
     padding: 50px 0;
     background-color: cadetblue;
-
+    border: 1px solid;
 }
 
 .projectsContainer {
-
+    border: 1px solid;
     background-color: darkolivegreen;
     flex-direction: column;
     justify-content: flex-start;
@@ -16,6 +16,7 @@
 }
 
 .projects {
+    background-color: darkgray;
     border: 1px solid;
     width: 100%;
     display: flex;
@@ -26,6 +27,7 @@
 
 .project {
     margin: 10px;
+    border: 1px solid;
     width: 250px;
     background-color: grey;
     display: flex;
