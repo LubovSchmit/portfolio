@@ -16,8 +16,8 @@ function Main() {
                         <p>I build web interfaces</p>
                     </div>
 
-                    <div className={style.photo}>
-                        <img src={'https://thumbs.dreamstime.com/b/geisha-en-kimono-noir-portrait-d-une-jeune-femme-asiatique-magnifique-black-159431674.jpg'} alt={'profile'}/>
+                    <div className={style.placePhoto}>
+                        <img className={style.photoProfile} src={'https://thumbs.dreamstime.com/b/geisha-en-kimono-noir-portrait-d-une-jeune-femme-asiatique-magnifique-black-159431674.jpg'} alt={'profile'}/>
                     </div>
 
                 </div>
