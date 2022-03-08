@@ -1,0 +1,71 @@
+@import "src/commun/styles/sass/variables";
+@import "src/commun/styles/sass/mixins";
+
+.contactsBlock {
+  padding: 50px 0;
+  background-color: $bgColor;
+
+  .contactsContainer {
+    display: flex;
+    justify-content: center;
+    @include container();
+
+    .contacts {
+      width: 350px;
+      text-align: center;
+      /* @include flex(column, center, center, wrap);*/
+      @media screen and (max-width: 252px) {
+        width: 100%;
+      }
+
+      .form {
+        width: 100%;
+        text-align: center;
+       /* @include flex(column, center, center, wrap);*///todo mixin flex
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+             flex-wrap: wrap;
+        .input {
+          background-color: $inputColor;
+          margin: 5px;
+          -webkit-writing-mode: horizontal-tb !important;
+          text-rendering: auto;
+          color: $textColor;
+          letter-spacing: normal;
+          word-spacing: normal;
+          text-transform: none;
+          text-indent: 0;
+          text-shadow: none;
+          display: inline-block;
+          text-align: start;
+          appearance: auto;
+          -webkit-rtl-ordering: logical;
+          cursor: text;
+          font: 400 13.3333px Arial;
+          padding: 1px 2px;
+          border-width: 2px;
+          border-style: inset;
+          border-image: initial;
+          overflow-wrap: break-word;
+        }
+
+        .textarea {
+          color: $textColor;
+          overflow: auto;
+          margin: 5px;
+          resize: vertical;
+          background-color: $inputColor;
+          font: 400 13.3333px Arial;
+          padding: 1px 2px;
+          border-width: 2px;
+          border-style: inset;
+          border-image: initial;
+          overflow-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+

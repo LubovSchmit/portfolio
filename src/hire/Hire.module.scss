@@ -1,0 +1,40 @@
+@import "src/commun/styles/sass/variables";
+@import "src/commun/styles/sass/mixins";
+
+.hireBlock {
+  padding: 50px 0;
+  background-color: $bgSecondColor;
+
+  .textAndButtonBlock {
+    width: 100%;
+    background-color: $bgSecondColor;
+    text-align: center;
+
+    .text {
+      font-family: $fontFamily;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-wrap: break-word;
+
+      & h3 {
+        font-size: 30px;
+        font-weight: 600;
+        background-color: $bgSecondColor;
+        letter-spacing: 2px;
+        color: $titleColor;
+        width: 50%;
+        border: 1px solid $primaryColor;
+        text-align: center;
+      }
+    }
+
+
+  }
+}
+
+
+
+
+

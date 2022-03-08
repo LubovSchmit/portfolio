@@ -1,6 +1,7 @@
+@import "src/commun/styles/sass/variables";
+
 .nav {
-    border: 1px solid;
-    border: 1px solid;
+    color: $primaryColor;
     width: 300px;
     display: flex;
     justify-content: space-between;

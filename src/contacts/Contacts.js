@@ -1,23 +1,27 @@
 import React from "react";
-import style from './Contacts.module.css';
-import stylesContainer from '../commun/styles/Container.module.css'
+import style from './Contacts.module.scss';
+import styleContainer from '../commun/styles/Container.module.scss'
+import Title from "../commun/components/title/Title";
+import Button from "../commun/components/button/Button";
 
 
 function Contacts() {
     return (
         <div className={style.contactsBlock}>
-            <div className={stylesContainer.container}>
+           {/* <div className={`${styleContainer.container} ${style.contactsContainer}`}>*/}
+            <div className={style.contactsContainer}>
                 <div className={style.contacts}>
-                    <div className={style.contactme}>
-                    <h3>Contact me</h3>
-                    </div>
+
+                    <Title text={'Contacts'}/>
+
                     <form className={style.form}>
-                        <input value={'Name'} className={style.input}/>
-                        <input value={'Email'} className={style.input}/>
+                        <input type='text' value={'Name'} className={style.input}/>
+                        <input type='text' value={'Email'} className={style.input}/>
                         <textarea value={'Message'} className={style.textarea}/>
 
                     </form>
-                    <button className={style.buttonContacts}>Send message</button>
+                    <Button text = {'Send message'}/>
+                   {/* <button type='submit' className={style.buttonSendMessage}>Send message</button>*/}
                 </div>
             </div>
         </div>

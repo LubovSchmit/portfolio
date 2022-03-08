@@ -1,19 +1,22 @@
 import React from "react";
-import style from './Skills.module.css';
-import styleContainer from '../commun/styles/Container.module.css'
+import style from './Skills.module.scss';
+import styleContainer from '../commun/styles/Container.module.scss'
 import Skill from "./skill/Skill";
+import Title from "../commun/components/title/Title";
 
 
 function Skills() {
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <h2 className={style.title}>Skills</h2>
+
+                    <Title text={'Skills'}/>
+
                 <div className={style.skills}>
-                    <Skill title={"React"} description={'vvv'}/>
+                    <Skill title={"React"} description={'lkjl lkjsdlng khbelifglm jhnslgfjs;kgj'}/>
                     <Skill title={"CSS"}
-                           description={'iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii'}/>
-                    <Skill title={"JS"} description={'ffffffffffff'}/>
+                           description={'i54djhnlj hkkjhelkjbf ;sjdb;fjk;jkbgkjdb    iii'}/>
+                    <Skill title={"JS"} description={'fffhgcj cghjkkkkk kkkkkkkk kk kkffff fffff'}/>
 
                 </div>
             </div>
@@ -23,9 +26,4 @@ function Skills() {
 
 export default Skills;
 
-/*
-<div className={style.skills}>JS</div>
-<div className={style.skills}>CSS</div>
-<div className={style.skills}>React</div>
-<div className={style.skills}>HTML</div>
-<div className={style.skills}>Redux</div>*/
+

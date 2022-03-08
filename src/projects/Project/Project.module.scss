@@ -1,0 +1,88 @@
+@import "../../commun/styles/sass/variables";
+@import "src/commun/styles/sass/mixins";
+
+.project {
+  margin: 10px;
+  width: 600px;
+  background-color: $bgItemColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .imageContainer {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+    .buttonProjects {
+      margin: 20%;
+      @include button($primaryColor, $fontFamily, 16px, 0s, 12px 34px, 30px, 1px solid transparent, 10px, 10px, relative, 1);
+      /*background-color: $primaryColor;
+      font-family: $fontFamily;
+      font-size: 16px;
+      transition-delay: 0s;
+      padding: 12px 34px;
+      border-radius: 30px;
+      border: 1px solid transparent;
+      margin-left: 10px;
+      margin-right: 10px;
+      position: relative;
+      z-index: 1;*/
+    }
+  }
+
+  .projectTitleAndDescription {
+    background-color: $bgItemColor;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projectTitle {
+      font-family: $fontFamily;
+      color: $titleColor;
+      background-color: $bgItemColor;
+      width: 90%;
+      overflow-wrap: break-word;
+      line-height: 1.2;
+      margin-top: 15px;
+    }
+
+    .description {
+      @include text($fontFamily, 17px, break-word, 1.8, 400, break-word, $textColor, 5px);
+      background-color: $bgItemColor;
+      line-height: 1.8;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

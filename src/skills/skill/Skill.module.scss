@@ -1,0 +1,41 @@
+@import "src/commun/styles/sass/mixins";
+@import "src/commun/styles/sass/variables";
+
+
+.skill {
+    margin: 10px;
+    width: 250px;
+    background-color: $bgItemColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .icon {
+        width: 60px;
+        height: 60px;
+        background-color: $primaryColor;
+    }
+    .skillTitle {
+        font-family: $fontFamily;
+        color: $titleColor;
+        background-color: $bgItemColor;
+        width: 90%;
+        margin: 3px;
+        overflow-wrap: break-word;
+        line-height: 1.2;
+        margin-top: 15px;
+    }
+    .description {
+        @include text($fontFamily, 17px, break-word, 1.8, 400, break-word, $textColor, 5px);
+        background-color: $bgItemColor;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

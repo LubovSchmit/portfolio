@@ -1,0 +1,11 @@
+@import "src/commun/styles/sass/variables";
+
+.header {
+    min-height: 10vh;
+    min-width: 100%;
+    /*position: fixed;*/
+    background-color: $bgSecondColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

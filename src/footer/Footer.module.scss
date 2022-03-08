@@ -1,0 +1,55 @@
+@import "src/commun/styles/sass/variables";
+
+.footerBlock {
+  border: 1px solid;
+  background-color: $bgSecondColor;
+  padding: 50px 0;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: center;
+
+    .name {
+      font-family: $fontFamily;
+      color: $titleColor;
+    }
+
+    .footer {
+      width: 50%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        border: 1px solid;
+        background-color: $primaryColor;
+        margin: 2px;
+      }
+
+
+    }
+
+    .copyright {
+      width: 50%;
+      color: $textColor;
+      text-align: center;
+      font-family: $fontFamily;
+      text-justify: auto;
+      margin: 10px
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+@import "../commun/styles/sass/variables";
+
+.projectsBlock {
+  padding: 50px 0;
+  background-color: $bgColor;
+
+  .projectsContainer {
+    background-color: $bgColor;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .projects {
+      background-color: $bgColor;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow-wrap: break-word;
+      align-items: flex-start;
+      margin-top: 30px;
+      @media screen and (max-width: 1549px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
