@@ -1,8 +1,36 @@
 @import "src/commun/styles/sass/variables";
+@import "src/commun/styles/sass/mixins";
 
 .nav {
+
+  width: 340px;
+  @include flex(row, space-between, stretch, nowrap);
+  background-color: inherit;
+  font-size: 1.20em;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 40px;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+
+  a {
+    color: $titleColor;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+
+  .active {
     color: $primaryColor;
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+  }
+}
+
+a:-webkit-any-link {
+  color: $bgSecondColor;
+  cursor: pointer;
+  text-decoration: underline;
 }

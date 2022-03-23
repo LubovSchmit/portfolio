@@ -5,7 +5,7 @@
 .skill {
     margin: 10px;
     width: 250px;
-    background-color: $bgItemColor;
+    background-color: $bgSecondColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,12 +13,20 @@
     .icon {
         width: 60px;
         height: 60px;
+        margin-bottom: 40px;
         background-color: $primaryColor;
+        transform: rotate(45deg);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
     }
     .skillTitle {
         font-family: $fontFamily;
         color: $titleColor;
-        background-color: $bgItemColor;
+        background-color: $bgSecondColor;
         width: 90%;
         margin: 3px;
         overflow-wrap: break-word;
@@ -27,7 +35,7 @@
     }
     .description {
         @include text($fontFamily, 17px, break-word, 1.8, 400, break-word, $textColor, 5px);
-        background-color: $bgItemColor;
+        background-color: $bgSecondColor;
         margin: 0;
         text-align: center;
     }

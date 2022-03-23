@@ -5,6 +5,7 @@ import Project from './Project/Project';
 import Title from '../commun/components/title/Title';
 import todoImage from './../assets/image/to-do-list.jpg';
 import socialImage from './../assets/image/social-network.png';
+import Fade from 'react-reveal/Fade';
 
 function Projects() {
     const todolist = {
@@ -15,16 +16,20 @@ function Projects() {
     };
     return (
 
-        <div className={style.projectsBlock}>
-            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+        <div id='projects' className={style.projectsBlock}>
+            <div className={style.projectsContainer}>
 
                 <Title text={'Projects'}/>
 
                 <div className={style.projects}>
-                    <Project style={social} title={"Social network"}
-                             description={"Project ct description Project description Project description Project description Project description Project description Project description"}/>
-                    <Project style={todolist} title={"Todolist"}
-                             description={"Project description Project description Project description Project description Project description Project description Project description Project description Project description"}/>
+                    <Fade right>
+                        <Project style={social} title={"Social network"}
+                                 description={"Project ct description Project description Project description Project description Project description Project description Project description"}/>
+                    </Fade>
+                    <Fade left>
+                        <Project style={todolist} title={"Todolist"}
+                                 description={"Project description Project description Project description Project description Project description Project description Project description Project description Project description"}/>
+                    </Fade>
                 </div>
             </div>
         </div>

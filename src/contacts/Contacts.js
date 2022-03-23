@@ -1,27 +1,27 @@
 import React from "react";
 import style from './Contacts.module.scss';
-import styleContainer from '../commun/styles/Container.module.scss'
 import Title from "../commun/components/title/Title";
-import Button from "../commun/components/button/Button";
+import Bounce from 'react-reveal/Bounce';
 
 
 function Contacts() {
     return (
-        <div className={style.contactsBlock}>
+        <div id='contacts' className={style.contactsBlock}>
            {/* <div className={`${styleContainer.container} ${style.contactsContainer}`}>*/}
             <div className={style.contactsContainer}>
                 <div className={style.contacts}>
 
                     <Title text={'Contacts'}/>
-
+                    <Bounce left>
                     <form className={style.form}>
-                        <input type='text' value={'Name'} className={style.input}/>
-                        <input type='text' value={'Email'} className={style.input}/>
-                        <textarea value={'Message'} className={style.textarea}/>
-
+                        <input type='text' placeholder={'Name'} className={style.input}/>
+                        <input type='text' placeholder={'Email'} className={style.input}/>
+                        <textarea placeholder={'Message'} className={style.textarea}/>
+                        <button type='submit' className={style.btn}>Send message</button>
                     </form>
-                    <Button text = {'Send message'}/>
-                   {/* <button type='submit' className={style.buttonSendMessage}>Send message</button>*/}
+                    </Bounce>
+                   {/* <Button text = {'Send message'}/>*/}
+
                 </div>
             </div>
         </div>

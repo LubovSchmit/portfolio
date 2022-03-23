@@ -1,11 +1,18 @@
 @import "src/commun/styles/sass/variables";
+@import "src/commun/styles/sass/mixins";
 
 .header {
-    min-height: 10vh;
-    min-width: 100%;
-    /*position: fixed;*/
+    /*min-height: 10vh;*/
+    height: 80px;
+    padding: 0 30px;
+  /*  min-width: 100%;*/
+    position: fixed;
+    /*top: 0;*/
+    left: 0;
+    right: 0;
+    z-index: 999;
     background-color: $bgSecondColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, flex-end, center, nowrap);
+
+
 }

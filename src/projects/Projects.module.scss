@@ -1,10 +1,13 @@
 @import "../commun/styles/sass/variables";
+@import "src/commun/styles/sass/mixins";
 
 .projectsBlock {
+/*height: 80vh;*/
   padding: 50px 0;
   background-color: $bgColor;
 
   .projectsContainer {
+ /*   @include container();*/
     background-color: $bgColor;
     flex-direction: column;
     justify-content: flex-start;
@@ -14,7 +17,7 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       overflow-wrap: break-word;
       align-items: flex-start;
       margin-top: 30px;

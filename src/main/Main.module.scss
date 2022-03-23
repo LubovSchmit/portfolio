@@ -2,65 +2,110 @@
 @import "src/commun/styles/sass/mixins";
 
 .mainBlock {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+  height: 80vh;
   padding: 50px 0;
   background-color: $bgColor;
-}
+  @include flex(row, space-around, center, nowrap);
 
-.container {
-  @include container();
-  background-color: $bgSecondColor;
-
-}
-
-.greeting {
-  background-color: $bgColor;
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 800px){
-    flex-wrap: wrap;
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
+
+  .mainContainer {
+    background-color: $bgColor;
+
+    .greeting {
+      background-color: $bgColor;
+      width: 100%;
+      @include flex(row, space-between, center, nowrap);
+      @media screen and (max-width: 800px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .textBlock {
+        width: 50%;
+        font-size: 30px;
+        text-align: left;
+        @media screen and (max-width: 800px) {
+          width: 100%;
+          font-size: 20px;
+          text-align: center;
+          padding-left: 0;
+          margin-bottom: 30px;
+        }
+        color: $titleColor;
+        font-family: $fontFamily;
+        padding-left: 20px;
+        background-color: inherit;
+        overflow-wrap: break-word;
+
+        .myName {
+          font-family: $fontFamily;
+          color: $primaryColor;
+          display: block;
+          font-size: 40px;
+          @media screen and (max-width: 800px) {
+            font-size: 30px;
+          }
+          margin-block-start: 0.67em;
+          margin-block-end: 0.67em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          font-weight: bold;
+        }
+      }
+
+      .imageContainer {
+        position: relative;
+        z-index: 1;
+
+        .image {
+          height: 400px;
+          width: 300px;
+          @media screen and (max-width: 800px) {
+            height: 300px;
+            width: 260px;
+            transition: .5s;
+            position: center;
+          }
+          background-position: center;
+          background-image: url('./../assets/image/myPhoto.jpg');
+          background-color: $bgSecondColor;
+
+          &:before {
+            content: "";
+            position: absolute;
+            height: 110%;
+            width: 105%;
+            border: 3px solid $primaryColor;
+            left: 15px;
+            top: -15px;
+            z-index: -1;
+
+          }
+        }
+      }
+
+
+    }
+  }
+
 }
 
-.photoProfile {
-
-  width: 100%;
-  height: 100%;
-}
-
-.placePhoto {
-  width: 100%;
-  min-height: 250px;
-  background-color: $primaryColor;
-
-}
-
-.text {
-  color: $titleColor;
-  font-family: $fontFamily;
-  text-align: left;
-  padding-left: 20px;
-  border: 1px solid $primaryColor;
-/*  width: 600px;*/
-  background-color: $bgColor;
-  overflow-wrap: break-word;
-
-}
 
 
-.myName {
-  font-family: $fontFamily;
-  color: $primaryColor;
-}
+
+
+
+
+
+
+
 
 
 

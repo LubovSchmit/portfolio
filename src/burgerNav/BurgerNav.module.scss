@@ -1,0 +1,64 @@
+@import "src/commun/styles/sass/variables";
+@import "src/commun/styles/sass/mixins";
+
+.burgerNav {
+  width: 100%;
+  height: 100%;
+  /*background-color: green;*/
+  background-color: $bgSecondColor;
+/*  position: relative;*/
+  font-size: 1.20em;
+  font-family: "Josefin Sans", sans-serif;
+  @media screen and (min-width: 400px) {
+    display: none;
+  }
+
+  .burgerNavItems {
+    background-color: $bgSecondColor;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 0;
+    padding: 20px;
+    transform: translate(0, -150px);
+    transition: 0.7s;
+    @include flex(column, space-between, center, nowrap);
+
+    a {
+      color: $primaryColor;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $primaryColor;
+      }
+    }
+    .active {
+      color: $primaryColor;
+      font-weight: bold;
+    }
+  }
+
+  .show {
+    transform: translate(0, 0);
+    height: 130px;
+  }
+
+  .burgerBtn {
+    width: 30px;
+    height: 30px;
+    background-color: $primaryColor;
+    position: absolute;
+    bottom: 24px;
+    right: 20px;
+  }
+
+
+}
+
+a:-webkit-any-link {
+  color: $bgSecondColor;
+  cursor: pointer;
+  text-decoration: underline;
+}

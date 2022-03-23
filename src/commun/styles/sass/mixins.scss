@@ -1,14 +1,14 @@
 @import "variables";
 
 
-@mixin container () {
+@mixin container() {
   height: 100%;
   width: 80%;
   margin: 0 auto;
 
 }
 
-@mixin flex ($flexDirection, $justifyContent, $alignItems, $flexWrap) {
+@mixin flex($flexDirection, $justifyContent, $alignItems, $flexWrap) {
   display: flex;
   flex-direction: $flexDirection;
   justify-content: $justifyContent;
@@ -40,5 +40,11 @@ $borderRadius, $border, $marginLeft, $marginRight, $position, $zIndex) {
   margin-right: $marginRight;
   position: $position;
   z-index: $zIndex;
+}
+
+@mixin bgSettings() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
