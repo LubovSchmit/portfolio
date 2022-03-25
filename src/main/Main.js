@@ -98,7 +98,7 @@ function Main() {
                             <span>Hi there</span>
                             <span className={style.myName}>I am Lubov Schmit</span>
                             <span>
-                                <ReactTypingEffect text={["I am Frontend Developer", "I build web interfaces"]}/>
+                                <ReactTypingEffect  text={["I am Frontend Developer", "I am Web Designer" ,"I build web interfaces"]} eraseDelay={1000} typingDelay={1000}/>
                             </span>
                         </span>
                     </Fade>

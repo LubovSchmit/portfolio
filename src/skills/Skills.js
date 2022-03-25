@@ -1,13 +1,14 @@
 import React from "react";
 import style from "./Skills.module.scss";
-
 import Skill from "./skill/Skill";
 import Title from "../commun/components/title/Title";
 import {SiCss3, SiJavascript, SiReact} from "react-icons/si";
 import Fade from 'react-reveal/Fade';
+import {IconContext} from "react-icons";
 
 
 function Skills() {
+
 
     return (
         <div id='skills' className={style.skillsBlock}>
@@ -17,16 +18,60 @@ function Skills() {
 
                 <div className={style.skills}>
                     <Fade top>
-                        <Skill skill={<SiReact/>} title={"React"}
-                               description={'lkjl lkjsdlng khbelifglm jhnslgfjs;kgj'}/>
+                        <Skill skill={
+                            <IconContext.Provider value={{className: "siIcon", size: "1.5em"}}>
+                                <SiReact/>
+                            </IconContext.Provider>
+
+                        } title={"React"}
+                               description={
+                                   <ul>
+                                       <li>creating of single-page application (SPA) using React (functional
+                                           components or class components)
+                                       </li>
+                                       <li>Javascript or Typescript like a superset of javascript</li>
+                                       <li>Redux state management</li>
+                                       <li>REST API (also known as RESTful API</li>
+                                   </ul>
+
+
+                               }/>
                     </Fade>
                     <Fade bottom>
-                        <Skill skill={<SiCss3 style={{transform: 'rotate(-45deg)'}}/>} title={"CSS"}
-                               description={'i54djhnlj hkkjhelkjbf ;sjdb;fjk;jkbgkjdbiii'}/>
+
+                        <Skill skill={
+
+                            <IconContext.Provider value={{className: "siIcon", size: "1.5em"}}>
+                                <SiCss3/>
+                            </IconContext.Provider>
+
+                        } title={"CSS"}
+                               description={
+                                   <ul>
+                                       <li>CSS3 (also CSS extension language - SASS)</li>
+                                       <li>CSS Grid Layout</li>
+                                       <li>CSS Flexbox Layout</li>
+                                       <li>features: pseudo-elements, media queries, mixins, nesting, variables,@import,
+                                           inheritance etc
+                                       </li>
+                                   </ul>
+                               }/>
                     </Fade>
                     <Fade top>
-                        <Skill skill={<SiJavascript style={{transform: 'rotate(-45deg)'}}/>} title={"JS"}
-                               description={'fffhgcj cghjkkkkk kkkkkkkk kk kkffff fffff'}/>
+
+                        <Skill skill={
+                            <IconContext.Provider value={{className: "siIcon", size: "1.5em"}}>
+                                <SiJavascript/>
+                            </IconContext.Provider>
+                        } title={"JS"}
+                               description={
+                                   <ul>
+                                       <li>ES6</li>
+                                       <li>for reducing the risk of bugged code I prefer using Typescript instead plain
+                                           Javascript (known as "Vanilla Javascript")
+                                       </li>
+                                   </ul>
+                               }/>
                     </Fade>
                 </div>
             </div>

@@ -3,7 +3,8 @@
 @import "src/commun/components/button/Button.module";
 
 .contactsBlock {
-  padding: 50px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: $bgColor;
 
   .contactsContainer {
@@ -14,18 +15,19 @@
     .contacts {
       width: 350px;
       text-align: center;
-         @media screen and (max-width: 252px) {
+      @media screen and (max-width: 252px) {
         width: 100%;
       }
 
       .form {
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
 
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-             flex-wrap: wrap;
+
         .input {
           background-color: $inputColor;
           margin: 5px;
@@ -43,63 +45,59 @@
           -webkit-rtl-ordering: logical;
           cursor: text;
           font: 400 13.3333px Arial;
-          padding: 1px 2px;
+          padding: 2px 5px;
           border-width: 2px;
           border-style: inset;
           border-image: initial;
           overflow-wrap: break-word;
+          border-radius: 20px;
 
           &:-webkit-autofill {
             border: 1px solid $inputColor;
             -webkit-text-fill-color: #c49b66;
             -webkit-box-shadow: 0 0 0 1000px #252527 inset;
             transition: background-color 5000s ease-in-out 0s;
+
             &:focus {
               border: 2px solid $inputColor;
             }
           }
         }
 
-
-
         .textarea {
+          height: 100px;
           color: $textColor;
           overflow: auto;
           margin: 5px;
           resize: vertical;
           background-color: $inputColor;
           font: 400 13.3333px Arial;
-          padding: 1px 2px;
+          padding: 2px 5px;
           border-width: 2px;
           border-style: inset;
           border-image: initial;
           overflow-wrap: break-word;
+          border-radius: 20px;
+
+        ;
         }
       }
-      .btn {
-        @include button($primaryColor, $fontFamily, 16px, 0s, 12px 34px, 30px, 1px solid transparent, 10px, 10px, relative, 1);
-        /*&::after {
-          content: '';
-          position: absolute;
-          width: 50%;
-          height: 10px;
-          background: $primaryColor;
-          bottom: 0;
-          z-index: -1;
-          transition: all 0.2s ease-in-out;
+
+      .btnContainer {
+        :hover {
+          transform: scale(1.2);
+          transition: all 0.4s linear 0s;
         }
-        &:hover {
-          text-decoration: none;
-          color: $primaryColor;
-          &::after {
-            width:100%;
-            height: 110%;
-            transition: all 0.3s ease-in-out 0s;
+
+        .btn {
+          @include button($primaryColor, $fontFamily, 16px, 0s, 12px 34px, 30px, 1px solid transparent, 10px, 10px, relative, 1);
+
+          :hover {
+            transform: scale(1);
           }
-        }*/
-
-
+        }
       }
+
     }
   }
 }

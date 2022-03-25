@@ -2,16 +2,20 @@
 @import "src/commun/styles/sass/mixins";
 
 .skillsBlock {
-  padding: 50px 0;
-  background-color: $bgSecondColor;
+  padding: 60px 0;
+  background-color: $bgColor;
+
   .skillsContainer {
-    background-color: $bgSecondColor;
-     .skills {
-      background-color: $bgSecondColor;
-      width: 100%;
+    background-color: $bgColor;
+
+    .skills {
+      background-color: $bgColor;
+      /*width: 100%;*/
       @include flex(row, space-around, flex-start, wrap);
       overflow-wrap: break-word;
       margin-top: 30px;
+
+
     }
   }
 }

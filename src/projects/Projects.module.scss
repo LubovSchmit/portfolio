@@ -2,18 +2,17 @@
 @import "src/commun/styles/sass/mixins";
 
 .projectsBlock {
-/*height: 80vh;*/
-  padding: 50px 0;
-  background-color: $bgColor;
+  /*height: 80vh;*/
+  padding: 60px 0;
+  background-color: $bgSecondColor;
 
   .projectsContainer {
- /*   @include container();*/
-    background-color: $bgColor;
+    background-color: $bgSecondColor;
     flex-direction: column;
     justify-content: flex-start;
 
     .projects {
-      background-color: $bgColor;
+      background-color: $bgSecondColor;
       width: 100%;
       display: flex;
       flex-wrap: wrap;

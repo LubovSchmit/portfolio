@@ -2,7 +2,7 @@
 @import "src/commun/styles/sass/mixins";
 
 .mainBlock {
-  height: 80vh;
+  height: 90vh;
   padding: 50px 0;
   background-color: $bgColor;
   @include flex(row, space-around, center, nowrap);
@@ -41,6 +41,7 @@
         color: $titleColor;
         font-family: $fontFamily;
         padding-left: 20px;
+        padding-right: 20px;
         background-color: inherit;
         overflow-wrap: break-word;
 
@@ -62,27 +63,31 @@
 
       .imageContainer {
         position: relative;
-        z-index: 1;
+        z-index: 2;
 
         .image {
+          z-index: 1;
           height: 400px;
           width: 300px;
+
+          background-position: center;
+          background-image: url('./../assets/image/myPhoto.jpg');
+          background-size: cover;
+          background-color: $bgSecondColor;
           @media screen and (max-width: 800px) {
             height: 300px;
             width: 260px;
             transition: .5s;
             position: center;
           }
-          background-position: center;
-          background-image: url('./../assets/image/myPhoto.jpg');
-          background-color: $bgSecondColor;
 
           &:before {
             content: "";
             position: absolute;
             height: 110%;
             width: 105%;
-            border: 3px solid $primaryColor;
+            border-radius: 20px;
+            border: 6px solid $primaryColor;
             left: 15px;
             top: -15px;
             z-index: -1;

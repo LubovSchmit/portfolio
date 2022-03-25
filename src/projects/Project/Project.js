@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Project.module.scss';
-import Button from "../../commun/components/button/Button";
+
 
 
 function Project(props) {
@@ -9,8 +9,11 @@ function Project(props) {
 
         <div className={style.project}>
             <div className={style.imageContainer} style={props.style}>
-                <Button text = {'Go To Watch'}/>
-                {/*<button className={style.buttonProjects}>Go To Watch</button>*/}
+                <div className={style.btnContainer}>
+
+                    <button className={style.btn}>Go</button>
+                </div>
+
             </div>
             <div className={style.projectTitleAndDescription}>
 

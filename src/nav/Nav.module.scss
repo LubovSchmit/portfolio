@@ -2,7 +2,6 @@
 @import "src/commun/styles/sass/mixins";
 
 .nav {
-
   width: 340px;
   @include flex(row, space-between, stretch, nowrap);
   background-color: inherit;
@@ -21,11 +20,15 @@
     &:hover {
       text-decoration: none;
       color: $primaryColor;
+      transform: scale(1.2);
+      transition: all 0.4s linear 0s;
     }
   }
 
   .active {
     color: $primaryColor;
+    transform: scale(1.2);
+    transition: all 0.4s linear 0s;
   }
 }
 

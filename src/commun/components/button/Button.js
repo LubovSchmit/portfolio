@@ -1,5 +1,5 @@
 import React from "react";
-import style from './Button.module.scss';
+/*import style from './Button.module.scss';*/
 import {Link} from "react-scroll";
 
 
@@ -8,7 +8,7 @@ import {Link} from "react-scroll";
 function Button(props) {
     return (
         <Link
-            activeClass={style.button}
+            /*activeClass={style.button}*/
             to={props.id}
             spy={true}
             smooth={true}
