@@ -2,17 +2,17 @@
 @import "src/commun/styles/sass/mixins";
 
 .header {
-    /*min-height: 10vh;*/
     height: 80px;
-    padding: 0 30px;
-  /*  min-width: 100%;*/
+    padding: 0 0;
+    width: 100%;
     position: fixed;
-    /*top: 0;*/
     left: 0;
     right: 0;
     z-index: 999;
-    background-color: $bgSecondColor;
-    @include flex(row, flex-end, center, nowrap);
+    background-color: $bgColor;
 
-
+    @media screen and (max-width: 370px) {
+        width: 99%;
+    }
+    @include flex(row, flex-end, center, wrap);
 }

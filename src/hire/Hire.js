@@ -22,7 +22,8 @@ function Hire() {
                             <Button text={"Hire me!"} id={"contacts"}/>
                         </div>
                         <div className={style.btn}>
-                            <Button text={"Download CV"} id={"downloadCv"}/>
+                           {/* <Button text={"Download CV"} href={'./../assets/cv/cv.jpg'} download={"CV Schmit Lubov"}/>*/}
+                            <a href={'./cv.pdf'} target=  {"_blank"} download={"CV Schmit Lubov"}>Download CV</a>
                         </div>
                     </div>
                 </Fade>

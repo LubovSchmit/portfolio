@@ -54,7 +54,7 @@
     @include text($fontFamily, 17px, break-word, 1.8, 400, break-word, $textColor, 5px);
     background-color: $bgColor;
     margin: 0;
-    text-align: justify;
+    text-align: left;
   }
 }
 

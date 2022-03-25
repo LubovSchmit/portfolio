@@ -2,8 +2,8 @@
 @import "src/commun/styles/sass/mixins";
 
 .nav {
-  width: 340px;
-  @include flex(row, space-between, stretch, nowrap);
+  width: 330px;
+  @include flex(row, space-between, stretch, wrap);
   background-color: inherit;
   font-size: 1.20em;
   font-family: "Josefin Sans", sans-serif;

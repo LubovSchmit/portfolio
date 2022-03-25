@@ -2,18 +2,32 @@ import React from "react";
 import style from './Contacts.module.scss';
 import Title from "../commun/components/title/Title";
 import Bounce from 'react-reveal/Bounce';
-import Button from "../commun/components/button/Button";
 
 
 function Contacts() {
     return (
         <div id='contacts' className={style.contactsBlock}>
-            {/* <div className={`${styleContainer.container} ${style.contactsContainer}`}>*/}
+            <Title text={'Contacts'}/>
             <div className={style.contactsContainer}>
-                <div className={style.contacts}>
+                <Bounce left>
+                    <div className={style.infos}>
+                        <div className={style.info}>
+                            <div className={style.item}>phone</div>
+                            <div className={style.data}>+33769211411</div>
+                        </div>
+                        <div className={style.info}>
+                            <div className={style.item}>address</div>
+                            <div className={style.data}>9 square Jean-Baptiste Clément 60200 Compiégne, FRANCE</div>
+                        </div>
+                        <div className={style.info}>
+                            <div className={style.item}>email</div>
+                            <div className={style.data}>liubou.schmit@gmail.com</div>
+                        </div>
 
-                    <Title text={'Contacts'}/>
-                    <Bounce left>
+                    </div>
+                </Bounce>
+                <Bounce right>
+                    <div className={style.contacts}>
                         <form className={style.form}>
                             <input type='text' placeholder={'Name'} className={style.input}/>
                             <input type='text' placeholder={'Email'} className={style.input}/>
@@ -22,13 +36,11 @@ function Contacts() {
                                 <button type='submit' className={style.btn}>Send message</button>
                             </div>
                         </form>
-                    </Bounce>
-                    {/* <Button text = {'Send message'}/>*/}
-
-                </div>
+                    </div>
+                </Bounce>
             </div>
         </div>
-);
+    );
 }
 
 export default Contacts;

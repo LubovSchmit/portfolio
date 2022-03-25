@@ -8,15 +8,45 @@
   background-color: $bgColor;
 
   .contactsContainer {
-    display: flex;
-    justify-content: center;
-    @include container();
+    @include flex(row, center, center, wrap);
+
+    .infos {
+      padding: 20px 30px;
+      width: 350px;
+      text-align: left;
+      @media screen and (max-width: 440px) {
+        width:70%;
+
+      }
+
+      .info {
+        word-wrap: break-word;
+        margin-bottom: 30px;
+        .item {
+          color: $primaryColor;
+          margin-bottom: 5px;
+          font-size: 11px;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        .data {
+          font-size: 15px;
+          color: $textColor;
+          line-height: 1.8;
+          margin: 0;
+        }
+      }
+    }
 
     .contacts {
+      padding: 20px 30px;
       width: 350px;
       text-align: center;
-      @media screen and (max-width: 252px) {
-        width: 100%;
+      @media screen and (max-width: 440px) {
+        width:70%;
+
       }
 
       .form {
@@ -54,7 +84,7 @@
 
           &:-webkit-autofill {
             border: 1px solid $inputColor;
-            -webkit-text-fill-color: #c49b66;
+            -webkit-text-fill-color: $primaryColor;
             -webkit-box-shadow: 0 0 0 1000px #252527 inset;
             transition: background-color 5000s ease-in-out 0s;
 
@@ -77,9 +107,7 @@
           border-style: inset;
           border-image: initial;
           overflow-wrap: break-word;
-          border-radius: 20px;
-
-        ;
+          border-radius: 20px;;
         }
       }
 

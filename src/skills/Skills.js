@@ -67,7 +67,7 @@ function Skills() {
                                description={
                                    <ul>
                                        <li>ES6</li>
-                                       <li>for reducing the risk of bugged code I prefer using Typescript instead plain
+                                       <li>for reducing the risk of bugged code I prefer using Typescript instead of plain
                                            Javascript (known as "Vanilla Javascript")
                                        </li>
                                    </ul>

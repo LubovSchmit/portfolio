@@ -2,26 +2,23 @@
 @import "src/commun/styles/sass/mixins";
 
 .projectsBlock {
-  /*height: 80vh;*/
-  padding: 60px 0;
+   padding: 40px;
   background-color: $bgSecondColor;
 
   .projectsContainer {
     background-color: $bgSecondColor;
-    flex-direction: column;
-    justify-content: flex-start;
 
     .projects {
+
       background-color: $bgSecondColor;
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      @include flex(row, space-around, flex-start, wrap);
       overflow-wrap: break-word;
-      align-items: flex-start;
       margin-top: 30px;
-      @media screen and (max-width: 1549px) {
-        justify-content: center;
+      @media screen and (max-width: 1300px) {
+        flex-direction: column;
+        align-items: center;
+
       }
     }
   }
