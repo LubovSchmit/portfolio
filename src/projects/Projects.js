@@ -22,7 +22,7 @@ function Projects() {
 
                 <div className={style.projects}>
                     <Fade right>
-                        <Project style={cards} title={'Cards project'} link={'https://github.com/LubovSchmit/hw16.git'}
+                        <Project style={cards} title={'Cards project'} link={'https://hw16.vercel.app/login'}
                                  description={'An app designed for learning, self-testing, revision or practising. This application creates packs of cards with certain concepts, words, phrases, rules, terms, etc. There is also a possibility to share this material with other users. App is created in Typescript with React, Redux Toolkit, React Router, Axios, SASS, Formik, Yup.'}/>
                     </Fade>
                     <Fade left>
