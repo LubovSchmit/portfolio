@@ -29,9 +29,9 @@ function Skills() {
                                        <li>creating of single-page application (SPA) using React (functional
                                            components or class components)
                                        </li>
-                                       <li>Javascript or Typescript like a superset of javascript</li>
+                                       <li>Javascript or Typescript </li>
                                        <li>Redux state management</li>
-                                       <li>REST API (also known as RESTful API</li>
+                                       <li>REST API (also known as RESTful API)</li>
                                    </ul>
 
 
@@ -51,7 +51,7 @@ function Skills() {
                                        <li>CSS3 (also CSS extension language - SASS)</li>
                                        <li>CSS Grid Layout</li>
                                        <li>CSS Flexbox Layout</li>
-                                       <li>features: pseudo-elements, media queries, mixins, nesting, variables,@import,
+                                       <li>features: pseudo-elements, media queries, mixins, nesting, variables, @import,
                                            inheritance etc
                                        </li>
                                    </ul>

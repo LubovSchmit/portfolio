@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Contacts.module.scss';
 import Title from "../commun/components/title/Title";
-import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
 
 
 function Contacts() {
@@ -9,7 +9,7 @@ function Contacts() {
         <div id='contacts' className={style.contactsBlock}>
             <Title text={'Contacts'}/>
             <div className={style.contactsContainer}>
-                <Bounce left>
+                <Fade left>
                     <div className={style.infos}>
                         <div className={style.info}>
                             <div className={style.item}>phone</div>
@@ -17,7 +17,7 @@ function Contacts() {
                         </div>
                         <div className={style.info}>
                             <div className={style.item}>address</div>
-                            <div className={style.data}>9 square Jean-Baptiste Clément 60200 Compiégne, FRANCE</div>
+                            <div className={style.data}>9 square Jean-Baptiste Clément 60200 Compiègne, FRANCE</div>
                         </div>
                         <div className={style.info}>
                             <div className={style.item}>email</div>
@@ -25,8 +25,8 @@ function Contacts() {
                         </div>
 
                     </div>
-                </Bounce>
-                <Bounce right>
+                </Fade>
+                <Fade right>
                     <div className={style.contacts}>
                         <form className={style.form}>
                             <input type='text' placeholder={'Name'} className={style.input}/>
@@ -37,7 +37,7 @@ function Contacts() {
                             </div>
                         </form>
                     </div>
-                </Bounce>
+                </Fade>
             </div>
         </div>
     );

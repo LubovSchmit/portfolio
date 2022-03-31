@@ -14,9 +14,9 @@ function Footer() {
                 </div>
                 </Fade>
                 <div className={style.socialIcons}>
-                    <SocialIcon className={style.icon} bgColor={'rgb(196, 155, 102)'}
+                    <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'}
                                 url="https://github.com/LubovSchmit"/>
-                    <SocialIcon className={style.icon} bgColor={'rgb(196, 155, 102)'} url="https://t.me/LubovSchmit"/>
+                    <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'} url="https://t.me/LubovSchmit"/>
 
 
                 </div>
