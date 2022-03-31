@@ -16,7 +16,8 @@ function Footer() {
                 <div className={style.socialIcons}>
                     <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'}
                                 url="https://github.com/LubovSchmit"/>
-                    <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'} url="https://t.me/LubovSchmit"/>
+                    <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'} url="https://telegram.me/LubovSchmit"/>
+                    <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'} url="https://www.codewars.com/users/LiubouSchmit"/>
 
 
                 </div>
