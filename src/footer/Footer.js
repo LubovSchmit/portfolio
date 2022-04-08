@@ -18,6 +18,7 @@ function Footer() {
                                 url="https://github.com/LubovSchmit"/>
                     <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'} url="https://telegram.me/LubovSchmit"/>
                     <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'} url="https://www.codewars.com/users/LiubouSchmit"/>
+                    <SocialIcon className={style.icon} target="_blank" bgColor={'rgb(196, 155, 102)'} url="http://www.linkedin.com/in/liubov-schmit-france"/>
 
 
                 </div>
