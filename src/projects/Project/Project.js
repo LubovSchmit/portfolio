@@ -1,7 +1,5 @@
 import React from "react";
 import style from './Project.module.scss';
-import cv from "../../assets/cv/cv.pdf";
-
 
 
 function Project(props) {
@@ -12,7 +10,6 @@ function Project(props) {
             <div className={style.imageContainer} style={props.style}>
                 <div className={style.btnContainer}>
                     <a className={style.btn} href={props.link} target={"_blank"}>Go</a>
-                    {/*<button className={style.btn}>Go</button>*/}
                 </div>
 
             </div>

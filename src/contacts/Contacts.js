@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 
 function Contacts() {
+
     return (
         <div id='contacts' className={style.contactsBlock}>
             <Title text={'Contacts'}/>
@@ -26,16 +27,26 @@ function Contacts() {
 
                     </div>
                 </Fade>
+
                 <Fade right>
                     <div className={style.contacts}>
-                        <form className={style.form}>
+
+                        <div className={style.btnContainer}>
+                            <div className={style.btn}>
+                                <a href={"mailto:liubou.schmit@gmail.com"} target={"_blank"}>Contact
+                                    me</a>
+                            </div>
+                        </div>
+
+
+                        {/*<form className={style.form}>
                             <input type='text' placeholder={'Name'} className={style.input}/>
                             <input type='text' placeholder={'Email'} className={style.input}/>
                             <textarea placeholder={'Message'} className={style.textarea}/>
                             <div className={style.btnContainer}>
                                 <button type='submit' className={style.btn}>Send message</button>
                             </div>
-                        </form>
+                        </form>*/}
                     </div>
                 </Fade>
             </div>

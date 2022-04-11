@@ -15,13 +15,14 @@
       width: 350px;
       text-align: left;
       @media screen and (max-width: 440px) {
-        width:70%;
+        width: 70%;
 
       }
 
       .info {
         word-wrap: break-word;
         margin-bottom: 30px;
+
         .item {
           color: $primaryColor;
           margin-bottom: 5px;
@@ -40,78 +41,82 @@
       }
     }
 
+
     .contacts {
       padding: 20px 30px;
       width: 350px;
       text-align: center;
       @media screen and (max-width: 440px) {
-        width:70%;
+        width: 70%;
 
       }
 
-      .form {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
+      /*      .form {
+              width: 100%;
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              flex-wrap: wrap;
 
 
-        .input {
-          background-color: $inputColor;
-          margin: 5px;
-          -webkit-writing-mode: horizontal-tb !important;
-          text-rendering: auto;
-          color: $textColor;
-          letter-spacing: normal;
-          word-spacing: normal;
-          text-transform: none;
-          text-indent: 0;
-          text-shadow: none;
-          display: inline-block;
-          text-align: start;
-          appearance: auto;
-          -webkit-rtl-ordering: logical;
-          cursor: text;
-          font: 400 13.3333px Arial;
-          padding: 2px 5px;
-          border-width: 2px;
-          border-style: inset;
-          border-image: initial;
-          overflow-wrap: break-word;
-          border-radius: 20px;
+              .input {
+                background-color: $inputColor;
+                margin: 5px;
+                -webkit-writing-mode: horizontal-tb !important;
+                text-rendering: auto;
+                color: $textColor;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0;
+                text-shadow: none;
+                display: inline-block;
+                text-align: start;
+                appearance: auto;
+                -webkit-rtl-ordering: logical;
+                cursor: text;
+                font: 400 13.3333px Arial;
+                padding: 2px 5px;
+                border-width: 2px;
+                border-style: inset;
+                border-image: initial;
+                overflow-wrap: break-word;
+                border-radius: 20px;
 
-          &:-webkit-autofill {
-            border: 1px solid $inputColor;
-            -webkit-text-fill-color: $primaryColor;
-            -webkit-box-shadow: 0 0 0 1000px #252527 inset;
-            transition: background-color 5000s ease-in-out 0s;
+                &:-webkit-autofill {
+                  border: 1px solid $inputColor;
+                  -webkit-text-fill-color: $primaryColor;
+                  -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+                  transition: background-color 5000s ease-in-out 0s;
 
-            &:focus {
-              border: 2px solid $inputColor;
-            }
-          }
-        }
+                  &:focus {
+                    border: 2px solid $inputColor;
+                  }
+                }
+              }
 
-        .textarea {
-          height: 100px;
-          color: $textColor;
-          overflow: auto;
-          margin: 5px;
-          resize: vertical;
-          background-color: $inputColor;
-          font: 400 13.3333px Arial;
-          padding: 2px 5px;
-          border-width: 2px;
-          border-style: inset;
-          border-image: initial;
-          overflow-wrap: break-word;
-          border-radius: 20px;;
-        }
-      }
+              .textarea {
+                height: 100px;
+                color: $textColor;
+                overflow: auto;
+                margin: 5px;
+                resize: vertical;
+                background-color: $inputColor;
+                font: 400 13.3333px Arial;
+                padding: 2px 5px;
+                border-width: 2px;
+                border-style: inset;
+                border-image: initial;
+                overflow-wrap: break-word;
+                border-radius: 20px;;
+              }
+            }*/
 
       .btnContainer {
+       a {
+         text-decoration: none;
+       }
         :hover {
           transform: scale(1.2);
           transition: all 0.4s linear 0s;
@@ -119,6 +124,7 @@
 
         .btn {
           @include button($primaryColor, $fontFamily, 16px, 0s, 12px 34px, 30px, 1px solid transparent, 10px, 10px, relative, 1);
+          width: 30%;
 
           :hover {
             transform: scale(1);
@@ -129,5 +135,3 @@
     }
   }
 }
-
-
