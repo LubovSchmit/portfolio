@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import style from './BurgerNav.module.scss';
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
 
 function BurgerNav() {
@@ -54,7 +54,9 @@ function BurgerNav() {
                 >Contacts</Link>
             </div>
             <div className={style.burgerBtn} onClick={onBurgerBtnClick}>
-
+                <div className={style.lineBurgerBtn}></div>
+                <div className={style.lineBurgerBtn}></div>
+                <div className={style.lineBurgerBtn}></div>
 
             </div>
         </div>

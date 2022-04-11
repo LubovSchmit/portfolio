@@ -7,7 +7,7 @@
   font-size: 1.20em;
   font-family: "Josefin Sans", sans-serif;
   @media screen and (max-width: 370px) {
-    width: 99%;
+    width: 94%;
   }
   @media screen and (min-width: 400px) {
     display: none;
@@ -50,12 +50,19 @@
   }
 
   .burgerBtn {
+    @include flex(column, center, center, wrap);
     width: 30px;
     height: 30px;
     background-color: $primaryColor;
     position: absolute;
     bottom: 24px;
     right: 20px;
+    .lineBurgerBtn {
+      width: 20px;
+      height: 3px;
+      background-color: $bgSecondColor;
+      margin: 2px 0;
+    }
   }
 
 
