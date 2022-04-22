@@ -96,7 +96,7 @@ function Main() {
                     <Fade left>
                         <span className={style.textBlock}>
                             <span>Hi there</span>
-                            <span className={style.myName}>I am Lubov Schmit</span>
+                            <span className={style.myName}>I am Liubov Schmit</span>
                             <span>
                                 <ReactTypingEffect  text={["I am Frontend Developer", "I am Web Designer" ,"I build web interfaces"]} eraseDelay={1000} typingDelay={1000}/>
                             </span>
