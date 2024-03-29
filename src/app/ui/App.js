@@ -1,12 +1,13 @@
 import React from "react";
 import './App.scss';
-import Header from "../header/Header";
-import Main from "../main/Main";
-import Hire from "../hire/Hire";
-import Skills from "../skills/Skills";
-import Projects from "../projects/Projects";
-import Contacts from "../contacts/Contacts";
-import Footer from "../footer/Footer";
+import Header from "../../widgets/header/ui/Header";
+import Main from "../../pages/main/ui/Main";
+import Footer from "../../widgets/footer/ui/Footer";
+import Skills from "../../entities/skills/ui/Skills";
+import Hire from "../../entities/hire/ui/Hire";
+import Projects from "../../entities/projects/ui/Projects";
+import Contacts from "../../entities/contacts/ui/Contacts";
+
 
 
 function App() {

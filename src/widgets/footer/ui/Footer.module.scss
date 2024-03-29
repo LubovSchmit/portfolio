@@ -1,0 +1,55 @@
+@import "../../../shared/styles/sass/variables";
+
+
+.footerBlock {
+  background-color: $bgSecondColor;
+  padding-bottom: 20px;
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .name {
+      font-family: $fontFamily;
+      color: $titleColor;
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .socialIcons {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      :hover {
+        transform: scale(1.2);
+        transition: all 0.4s linear 0s;
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        border: 1px solid;
+        margin: 10px;
+
+        :hover {
+          transform: scale(1);
+        }
+      }
+    }
+
+    .copyright {
+      width: 50%;
+      color: $textColor;
+      text-align: center;
+      font-family: $fontFamily;
+      text-justify: auto;
+      margin: 10px
+    }
+  }
+}
+

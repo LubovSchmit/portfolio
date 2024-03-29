@@ -1,0 +1,65 @@
+@import "../../../../shared/styles/sass/mixins";
+@import "../../../../shared/styles/sass/variables";
+
+
+.skillContainer {
+  margin: 20px;
+  width: 250px;
+  background-color: $bgColor;
+  @include flex(column, center, center, nowrap);
+
+  .iconBlock {
+    position: relative;
+
+    :hover {
+      transform: scale(1.3);
+      transition: all 0.4s linear 0s;
+    }
+
+    .iconContainer {
+
+      width: 60px;
+      height: 60px;
+      margin-bottom: 40px;
+      background-color: $primaryColor;
+
+      border-radius: 20px;
+      border: 1px solid transparent;
+      @include flex(row, center, center, nowrap);
+
+      .siIcon {
+        color: $bgItemColor;
+        horiz-align: center;
+        vertical-align: center;
+        position: absolute;
+
+        :hover {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+
+  .skillTitle {
+    font-family: $fontFamily;
+    color: $titleColor;
+    background-color: $bgColor;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .description {
+    @include text($fontFamily, 17px, break-word, 1.8, 400, break-word, $textColor, 5px);
+    background-color: $bgColor;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+

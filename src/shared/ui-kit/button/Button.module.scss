@@ -1,0 +1,16 @@
+@import "../../styles/sass/variables";
+
+.button {
+  background-color: $primaryColor;
+  font-family: $fontFamily;
+  font-size: 16px;
+  transition-delay: 0s;
+  padding: 12px 34px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 3;
+
+}

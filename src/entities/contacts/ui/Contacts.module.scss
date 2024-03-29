@@ -1,0 +1,76 @@
+@import "../../../shared/styles/sass/variables";
+@import "../../../shared/styles/sass/mixins";
+@import "../../../shared/ui-kit/button/Button.module";
+
+.contactsBlock {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $bgColor;
+
+
+  .contactsContainer {
+    @include flex(row, center, center, wrap);
+
+    .infos {
+      @include flex(row, left, center, wrap);
+      width: 350px;
+
+      @media screen and (max-width: 440px) {
+        width: 70%;
+
+      }
+
+      .info {
+        word-wrap: break-word;
+        margin-bottom: 30px;
+
+        .item {
+          color: $primaryColor;
+          margin-bottom: 5px;
+          font-size: 11px;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        .data {
+          font-size: 15px;
+          color: $textColor;
+          line-height: 1.8;
+          margin: 0;
+        }
+      }
+    }
+
+
+    .contacts {
+      width: 350px;
+      text-align: center;
+      @media screen and (max-width: 440px) {
+        width: 70%;
+
+      }
+      .btnContainer {
+        @include flex(row, center, center, wrap);
+
+        a {
+          text-decoration: none;
+        }
+
+        :hover {
+          transform: scale(1.2);
+          transition: all 0.4s linear 0s;
+        }
+
+        .btn {
+          @include button($primaryColor, $fontFamily, 16px, 0s, 12px 34px, 30px, 1px solid transparent, 10px, 10px, relative, 1);
+          width: 30%;
+
+          :hover {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}

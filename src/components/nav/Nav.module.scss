@@ -1,0 +1,39 @@
+@import "../../shared/styles/sass/variables";
+@import "../../shared/styles/sass/mixins";
+
+.nav {
+  width: 330px;
+  @include flex(row, space-between, stretch, wrap);
+  background-color: inherit;
+  font-size: 1.20em;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 40px;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
+
+  a {
+    color: $titleColor;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+      transform: scale(1.2);
+      transition: all 0.4s linear 0s;
+    }
+  }
+
+  .active {
+    color: $primaryColor;
+    transform: scale(1.2);
+    transition: all 0.4s linear 0s;
+  }
+}
+
+a:-webkit-any-link {
+  color: $bgSecondColor;
+  cursor: pointer;
+  text-decoration: underline;
+}
